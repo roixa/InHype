@@ -1,0 +1,61 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ThemeOverlay.AppCompat.navTheme">
+
+        <!-- Color of text and icon when SELECTED -->
+        <item name="colorPrimary">@color/colorAccent</item>
+
+        <!-- Background color when SELECTED -->
+        <item name="colorControlHighlight">@color/colorAccent</item>
+
+    </style>
+    <style name="RoundedWhiteText">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/rounded_white_shape</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#d83baa</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="TransperentWhiteText">
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+
+    </style>
+
+    <style name="EditTextStartStyle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorHint">#b3adc4</item>
+        <item name="colorControlNormal">#b3adc4</item>
+        <item name="colorControlActivated">#ffffff</item>
+        <item name="colorControlHighlight">#b3adc4</item>
+
+    </style>
+
+    <style name="MediumBlackText">
+        <item name="android:textSize">12.2sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">11.3sp</item>
+
+    </style>
+
+</resources>

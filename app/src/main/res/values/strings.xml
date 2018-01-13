@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">InHype</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_name">Username</string>
+
+    <string name="nav_best">Лучшее</string>
+    <string name="nav_choose">Отбор</string>
+    <string name="nav_hype">Сделать снимок</string>
+    <string name="nav_lenta">Мои подписки</string>
+    <string name="nav_profile">Профиль</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="nav_help">Помощь</string>
+    <string name="nav_favorites">Избранное</string>
+
+    <string name="title_rating">Ваш ранг</string>
+    <string name="title_subscribers">Подписчики</string>
+    <string name="title_subscriptions">Подписки</string>
+
+    <string name="title_first_start_login">Уже зарегистрированы?</string>
+    <string name="title_first_start_register">Регистрация</string>
+    <string name="title_singin_login">Войти</string>
+    <string name="title_singin_recover">Забыли пароль?</string>
+    <string name="prompt_singin_name">Ваш никнейм или e-mail</string>
+    <string name="prompt_singin_password">Ваш пароль</string>
+    <string name="prompt_forgot_email">Введите ваш e-mail</string>
+    <string name="title_forgot_recover">Сбросить пароль</string>
+    <string name="title_recover_password"></string>
+    <string name="title_singup_register">Приступим!</string>
+    <string name="prompt_singup_name">Придумайте никнейм</string>
+    <string name="prompt_singup_password">Ваш пароль</string>
+    <string name="prompt_singup_email">Ваш e-mail</string>
+
+    <string name="category_no">Без категории</string>
+    <string name="category_animal">Животные</string>
+    <string name="category_food">Еда</string>
+    <string name="category_nature">Природа</string>
+    <string name="category_sport">Спорт</string>
+    <string name="category_games">Игры</string>
+    <string name="category_cosplay">Косплей</string>
+    <string name="category_peoples">Люди</string>
+    <string name="category_beauty">Красота</string>
+    <string name="category_prestige">Престиж</string>
+    <string name="category_events">События</string>
+    <string name="category_erotic">Эротика</string>
+    <string name="category_choose">Выберите категорию</string>
+
+    <string name="image_loading">Загрузка изображения...</string>
+
+    <string name="send_comment_hint">Что вы думаете об этом фото?</string>
+
+    <string name="save">Сохранить</string>
+
+    <string name="subscribe">Подписаться</string>
+    <string name="unsubscribe">Мои подписки</string>
+
+    <string name="email_support">admin@inhype.net</string>
+
+    <string name="user_support">Обращение пользователя</string>
+</resources>

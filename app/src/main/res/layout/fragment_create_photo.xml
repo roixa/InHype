@@ -1,0 +1,58 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.roix.inhype.root.CreatePhotoFragment"
+    >
+    <data>
+        <variable name="presenter" type="com.roix.inhype.presentation.presenter.root.CreatePhotoPresenter" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/uploadAva"
+            android:layout_width="@dimen/upload_icon_size"
+            android:layout_height="@dimen/upload_icon_size"
+            android:layout_margin="@dimen/base_padding"
+            android:padding="@dimen/base_padding"
+            android:layout_gravity="center"
+            android:onClick="@{() -> presenter.onClickUploadFromGallery()}"
+            android:src="@drawable/upload_ava_mini"/>
+        <EditText
+            android:id="@+id/extraEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/app_name"
+            android:padding="@dimen/base_padding"
+            android:layout_margin="@dimen/base_padding"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/edit_mini"
+            android:drawableLeft="@drawable/edit_mini"
+            android:lines="3"
+            android:onTextChanged="@{presenter.onExtraTextChanged}"
+
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="send photo"
+            android:onClick="@{() -> presenter.onClickSend()}"
+
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+</layout>

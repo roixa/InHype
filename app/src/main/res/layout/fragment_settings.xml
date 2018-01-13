@@ -1,0 +1,121 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context="com.roix.inhype.ui.fragment.root.SettingsFragment"
+    >
+    <data>
+        <variable name="presenter" type="com.roix.inhype.presentation.presenter.root.SettingsPresenter" />
+    </data>
+    <LinearLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:paddingTop="25dp"
+        android:orientation="vertical"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/uploadAva"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="@dimen/base_padding"
+            android:padding="@dimen/base_padding"
+            android:layout_gravity="center"
+            android:onClick="@{() -> presenter.onClickUploadAva()}"
+            android:src="@drawable/upload_ava"/>
+        <EditText
+            android:id="@+id/userEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/app_name"
+
+            android:textSize="12.2sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"
+
+            android:padding="@dimen/base_padding"
+            android:layout_margin="@dimen/base_padding"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/user"
+            android:drawableLeft="@drawable/user"
+            android:maxLines="1"
+            android:onTextChanged="@{presenter.onNameTextChanged}"
+
+            />
+        <EditText
+            android:id="@+id/mailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/app_name"
+            android:padding="@dimen/base_padding"
+            android:layout_margin="@dimen/base_padding"
+            android:visibility="gone"
+
+            android:textSize="12.2sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"
+
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/mail"
+            android:drawableLeft="@drawable/mail"
+            android:maxLines="1"
+            android:onTextChanged="@{presenter.onEmailTextChanged}"
+
+            />
+        <EditText
+            android:id="@+id/extraEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/app_name"
+            android:padding="@dimen/base_padding"
+            android:layout_margin="@dimen/base_padding"
+
+            android:textSize="12.2sp"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="normal"
+            android:gravity="center_horizontal"
+
+
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/edit"
+            android:drawableLeft="@drawable/edit"
+            android:lines="3"
+            android:onTextChanged="@{presenter.onExtraTextChanged}"
+
+            />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/button_gradient_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> presenter.onClickApplyChanges()}"
+                >
+            </ImageView>
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="normal"
+                >
+
+            </TextView>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</layout>

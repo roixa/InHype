@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/edit"
+        android:icon="@drawable/edit_color"
+        android:title="edit"
+
+        android:orderInCategory="100"
+        yourapp:showAsAction="always"
+        >
+
+    </item>
+    <item
+        android:id="@+id/ava"
+        android:title="ava"
+        android:icon="@color/colorAccent"
+        yourapp:actionLayout="@layout/ava_toolbar_layout"
+        android:orderInCategory="100"
+        yourapp:showAsAction="always"
+        >
+
+    </item>
+
+
+</menu>

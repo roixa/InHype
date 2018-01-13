@@ -1,0 +1,22 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+
+    </data>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            >
+            <include
+                android:id="@+id/app_bar"
+                layout="@layout/app_bar"/>
+            <FrameLayout
+                android:id="@+id/fragmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+        </RelativeLayout>
+</layout>

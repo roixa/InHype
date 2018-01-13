@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_best"
+            android:icon="@drawable/fire"
+            android:title="@string/nav_best" />
+        <item
+            android:id="@+id/nav_choose"
+            android:icon="@drawable/medal"
+
+            android:title="@string/nav_choose" />
+        <item
+            android:id="@+id/nav_hype"
+            android:icon="@drawable/photo_camera"
+            android:checked="true"
+            android:title="@string/nav_hype" />
+        <item
+            android:id="@+id/nav_lenta"
+            android:icon="@drawable/social_relations"
+
+            android:title="@string/nav_lenta" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/man"
+
+            android:title="@string/nav_profile" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:actionLayout="@layout/nav_header_root"
+            android:title="@string/nav_settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/lifebuoy"
+            android:actionLayout="@layout/nav_header_root"
+            android:title="@string/nav_help" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/favorites"
+            android:actionLayout="@layout/nav_header_root"
+            android:title="@string/nav_favorites" />
+
+        <!--
+                <item
+                    android:id="@+id/nav_top"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="Top" />
+                <item
+                    android:id="@+id/nav_shop"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="Shop" />
+                    -->
+    </group>
+
+
+
+
+</menu>

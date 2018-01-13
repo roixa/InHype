@@ -1,0 +1,10 @@
+syntax: glob
+.git/
+.gitignore
+.gradle/
+.hgignore
+.idea/compiler.xml
+.idea/
+app/build/
+build/
+app/app-release.apk

@@ -1,0 +1,4 @@
+<bitmap android:src="@drawable/mark"
+    android:gravity="start"
+    xmlns:android="http://schemas.android.com/apk/res/android"></bitmap>
+

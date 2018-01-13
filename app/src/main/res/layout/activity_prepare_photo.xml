@@ -1,0 +1,45 @@
+<layout >
+    <data>
+        <variable name="presenter" type="com.roix.inhype.presentation.presenter.preparephoto.PreparePhotoPresenter" />
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <include
+            android:fitsSystemWindows="true"
+
+            android:id="@+id/app_bar"
+            layout="@layout/app_bar"/>
+
+
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+        <EditText
+            android:id="@+id/extraEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/app_name"
+            android:padding="@dimen/base_padding"
+            android:layout_margin="@dimen/base_padding"
+            android:background="@drawable/rounded_edittext"
+            android:drawableStart="@drawable/edit_mini"
+            android:drawableLeft="@drawable/edit_mini"
+            android:lines="3"
+            android:onTextChanged="@{presenter.onExtraTextChanged}"
+
+            />
+
+    </LinearLayout>
+
+</layout>
